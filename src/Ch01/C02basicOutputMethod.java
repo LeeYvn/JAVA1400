@@ -78,6 +78,13 @@ public class C02basicOutputMethod {
 		System.out.print("  ***\n");
 		System.out.print("   *\n");
 		
+		int num1;
+		num1 = 10;
+		
+		int num2 = 4;
+		int num3 = num1 + num2;
+		System.out.println(num3);
+		
 	}
 
 }
