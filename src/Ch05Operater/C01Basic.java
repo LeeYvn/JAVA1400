@@ -76,11 +76,25 @@ public class C01Basic {
 		//문제
 		//두 수를 입력받아 큰수를 출력하세요
 		System.out.println("두 수를 입력하세요 : ");
-		
 		int num1 = sc.nextInt();
 		int num2 = sc.nextInt();
 		int num3 = (num1 > num2)? num1:num2;
 		System.out.println("큰 수는 : " + num3);
+		
+		sc.close();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
