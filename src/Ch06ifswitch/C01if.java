@@ -46,7 +46,6 @@ public class C01if {
 //		}
 //		System.out.println("프로그램을 종료합니다.");
 
-		Scanner sc = new Scanner(System.in);
 		//문제
 		//정수 하나를 받아서 짝수면 '짝수입니다
 		//홀수면 "홀수입니다"를 출력하세요
@@ -121,39 +120,77 @@ public class C01if {
 		//그게 아니면 "불합격" 처리
 		
 		//국어가 이하인가?
-		int kr = sc.nextInt();
-		int eng = sc.nextInt();
-		int math = sc.nextInt();
+//		int kr = sc.nextInt();
+//		int eng = sc.nextInt();
+//		int math = sc.nextInt();
+//		
+//		if(kr >= 40 && eng >= 40 && math >= 40)
+//		{
+//			if(kr+eng+math/3 >= 60)
+//			{
+//				System.out.println("합격");
+//			}
+//			else
+//			{
+//				System.out.print("불합격");
+//			}
+//		}
+//		else
+//		{
+//			System.out.println("불합격");
+//		}
 		
-		if(kr >= 40 && eng >= 40 && math >= 40)
+		//평균점수를 입력받아 그 점수가
+		//90점 이상이면 'A' 출력
+		//80점 이상이면 'B' 출력
+		//70점 이상이면 'C' 출력
+		//60점 이상이면 'D' 출력
+		//50점 이상이면 'F' 출력
+//		int avg = (kr + eng + math)/3;
+//		
+//		if(avg >= 90)
+//		{
+//			System.out.println("A");
+//		}
+//		else if(avg >= 80)
+//		{
+//			System.out.println("B");
+//		}
+//		else if(avg >= 70)
+//		{
+//			System.out.println("C");
+//		}
+//		else if(avg >= 60)
+//		{
+//			System.out.println("D");
+//		}
+//		else
+//		{
+//			System.out.println("F");
+//		}
+		//문제(강사와 같이 합니다)
+		//세 정수를 입력받아서 큰수를 출력하세요(단순 IF문)		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("세 정수 입력 : ");
+		int n1 = sc.nextInt();
+		int n2 = sc.nextInt();
+		int n3 = sc.nextInt();
+		
+		if(n1 >= n2 && n1 >= n3)
 		{
-			if(kr+eng+math/3 >= 60)
-			{
-				System.out.print("합격");
-			}
-			else
-			{
-				System.out.print("불합격");
-				
-			}
+			System.out.println("큰수 : " + n1);
+		}
+		else if(n2 >= n3 && n2 >= n1)
+		{
+			System.out.println("큰수 : " + n2);			
 		}
 		else
 		{
-			System.out.println("불합격");
+			System.out.println("큰수 : " + n3);			
 		}
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		//문제(강사와 같이 합니다)
-		//세 정수를 입력받아서 큰수를 출력하세요(단순 IF문)		
+		sc.close();
 		
 		
 		
@@ -171,5 +208,4 @@ public class C01if {
 		
 		
 	}
-
 }
